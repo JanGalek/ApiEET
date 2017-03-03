@@ -245,6 +245,18 @@ class Sender
     }
 
     /**
+     * @param $value
+     */
+    public function setProductsWithDph($value = false)
+    {
+        $this->productsWithDph = $value;
+
+        if ($value === true) {
+            $this->dph = 1;
+        }
+    }
+
+    /**
      * @param $price
      * @param bool $round
      */
