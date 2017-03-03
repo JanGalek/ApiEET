@@ -1,4 +1,10 @@
 # Api EET
+[![Travis] (https://travis-ci.org/JanGalek/ApiEET.svg?branch=master)](https://travis-ci.org/JanGalek/ApiEET)
+[![Total Downloads](https://poser.pugx.org/galek/apieet/downloads)](https://packagist.org/packages/galek/apieet)
+[![Latest Stable Version](https://poser.pugx.org/galek/apieet/v/stable)](https://packagist.org/packages/galek/apieet)
+[![License](https://poser.pugx.org/galek/apieet/license)](https://packagist.org/packages/galek/apieet)
+[![Monthly Downloads](https://poser.pugx.org/galek/apieet/d/monthly)](https://packagist.org/packages/galek/apieet)
+
 Api EET is a Add-On for [Api-EET service](https://api-eet.cz/)
 
 Requirements
