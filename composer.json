@@ -1,0 +1,25 @@
+{
+  "name": "galek/apieet",
+  "description": "Add-On for https://api-eet.cz/",
+  "homepage": "https://jan-galek.cz",
+  "type": "project",
+  "license": "GPL-3.0",
+  "authors": [
+    {
+      "name": "Jan Galek",
+      "homepage": "https://jan-galek.cz"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Galek\\ApiEET\\": "src/Galek/ApiEET"
+    }
+  },
+  "require": {
+    "php": ">= 5.6",
+    "nette/di": ">= 2.4"
+  },
+  "require-dev": {
+    "nette/tester": "^1.7"
+  }
+}
