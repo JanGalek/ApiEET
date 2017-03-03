@@ -4,6 +4,7 @@
 [![Latest Stable Version](https://poser.pugx.org/galek/apieet/v/stable)](https://packagist.org/packages/galek/apieet)
 [![License](https://poser.pugx.org/galek/apieet/license)](https://packagist.org/packages/galek/apieet)
 [![Monthly Downloads](https://poser.pugx.org/galek/apieet/d/monthly)](https://packagist.org/packages/galek/apieet)
+[![Tips](https://img.shields.io/gratipay/user/JanGalek.svg)]
 
 Api EET is a Add-On for [Api-EET service](https://api-eet.cz/)
 
@@ -28,3 +29,8 @@ Documentation
 -------------
 
 Learn more in the [documentation](https://github.com/JanGalek/ApiEET/blob/master/docs/en/index.md) and [czech version of documentation](https://github.com/JanGalek/ApiEET/blob/master/docs/cs/index.md).
+
+TODO
+----
+
+Actual things to do [found here](https://github.com/JanGalek/ApiEET/blob/master/TODO.md)
