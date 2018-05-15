@@ -342,8 +342,8 @@ class Sender
         $auth = 'Auth: ' . $this->auth;
 
         $options = [
-            CURLOPT_URL => "https://rest.api-eet.cz/v1/sale-add",
-            CURLOPT_CUSTOMREQUEST => "POST",
+            CURLOPT_URL => 'https://rest.api-eet.cz/v1/sale-add',
+            CURLOPT_CUSTOMREQUEST => 'POST',
             CURLOPT_POSTFIELDS => $data_string,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HTTPHEADER => [$auth]
@@ -356,11 +356,11 @@ class Sender
 
         $res = json_decode($response);
 
-        if ($res->result == 'success') {
+        if ($res !== null && $res->result == 'success') {
             if ($this->onSuccess !== null) {
                 call_user_func($this->onSuccess);
             }
-        } elseif ($res->result == 'api_error') {
+        } elseif ($res !== null && $res->result == 'api_error') {
             if ($this->onApiError !== null) {
                 call_user_func($this->onApiError);
             }
@@ -368,7 +368,7 @@ class Sender
             if ($this->onError !== null) {
                 call_user_func($this->onError);
             }
-        } elseif ($res->result == 'eet_error') {
+        } elseif ($res !== null && $res->result == 'eet_error') {
             if ($this->onEETError !== null) {
                 call_user_func($this->onEETError);
             }
@@ -382,7 +382,7 @@ class Sender
             }
         }
 
-        if ($res->result != 'api_error') {
+        if ($res !== null && $res->result != 'api_error') {
             if ($this->downloadReceipt) {
                 $this->downloadReceipt($res->receipt_url);
             }
